@@ -1,0 +1,52 @@
+url: https://ETC5523-2025.github.io/assignment-4-packages-and-shiny-apps-shenhaiTT
+
+template:
+  bootstrap: 5
+  params:
+    bootswatch: flatly
+
+home:
+  strip_header: true
+  links:
+  - text: Get Started
+    href: articles/HongyuFinancialAnalysis.html
+  - text: Reference
+    href: reference/
+  - text: Articles
+    href: articles/
+  - text: Download from GitHub
+    href: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-shenhaiTT
+
+  introduction: |
+    # HongyuFinancialAnalysis: Interactive Industry Financial Analysis Platform
+
+    A comprehensive R package for interactive financial analysis across industries,
+    featuring trend analysis, cross-industry comparisons, and multidimensional
+    visualizations based on the Osiris dataset.
+
+navbar:
+  structure:
+    left: [home, reference, articles, news]
+    right: [github]  # 改为字符向量
+
+  components:
+    github:
+      icon: fa-github fa-lg
+      href: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-shenhaiTT
+
+reference:
+- title: "Core Functions"
+  desc: "Main functions for launching and using the package"
+  contents:
+  - launch_app
+
+- title: "Datasets"
+  desc: "Financial data and industry metadata"
+  contents:
+  - financial_data
+  - industry_metadata
+
+vignettes:
+- title: "Getting Started with HongyuFinancialAnalysis"
+  contents:
+  - financial-analysis-guide

@@ -1,29 +1,52 @@
-Package: HongyuFinancialAnalysis
-Title: Industry Financial Analysis Platform
-Version: 1.0.0
-Authors@R: 
-    person("Hongyu", "Yin", , "YiZhi3190826532@outlook.com", role = c("aut", "cre"))
-Description: Based on the Osiris dataset, this tool provides interactive financial analysis across industries. It includes features such as trend analysis, industry benchmarking, and multidimensional visualization, supporting the analysis of key financial indicators including operating revenue, net debt, current assets, and current ratio.
-License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-Imports:
-    shiny,
-    ggplot2,
-    dplyr,
-    tidyr,
-    scales,
-    DT
-Suggests:
-    knitr,
-    rmarkdown
-VignetteBuilder: knitr
-Depends: 
-    R (>= 3.5)
-RoxygenNote: 7.3.3
-## Installation
+# HongyuFinancialAnalysis
+
+[![pkgdown](https://img.shields.io/badge/pkgdown-site-blue.svg)](https://yourusername.github.io/HongyuFinancialAnalysis)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+An interactive industry financial analysis platform built with R and Shiny.
+
+## 📦 Installation
 
 ```r
 # Install from GitHub
 remotes::install_github("ETC5523-2025/assignment-4-packages-and-shiny-apps-shenhaiTT")
 ```
+
+## 🚀 Quick Start
+
+```r
+library(HongyuFinancialAnalysis)
+
+# Launch the interactive analysis platform
+launch_app()
+
+# Explore the datasets
+data(financial_data)
+head(financial_data)
+```
+
+## 📚 Documentation
+
+**Visit our comprehensive documentation website:**  
+👉 [https://shenhaiTT.github.io/HongyuFinancialAnalysis](https://shenhaiTT.github.io/HongyuFinancialAnalysis)
+
+The pkgdown site includes:
+- Detailed function documentation
+- Interactive examples
+- Comprehensive vignettes
+- Dataset descriptions
+
+## 📊 Features
+
+- Interactive financial trend analysis
+- Cross-industry performance comparison  
+- Multi-dimensional data visualization
+- Automated insights and recommendations
+
+## 📖 Vignettes
+
+For detailed tutorials and examples, see the vignettes on our documentation website.
+
+## 📄 License
+
+MIT License

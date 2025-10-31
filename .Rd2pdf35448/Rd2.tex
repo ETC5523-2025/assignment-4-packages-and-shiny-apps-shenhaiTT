@@ -1,0 +1,157 @@
+\nonstopmode{}
+\documentclass[a4paper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\makeatletter\@ifl@t@r\fmtversion{2018/04/01}{}{\usepackage[utf8]{inputenc}}\makeatother
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Package `HongyuFinancialAnalysis'}}
+\par\bigskip{\large \today}
+\end{center}
+\ifthenelse{\boolean{Rd@use@hyper}}{\hypersetup{pdftitle = {HongyuFinancialAnalysis: Industry Financial Analysis Platform}}}{}
+\ifthenelse{\boolean{Rd@use@hyper}}{\hypersetup{pdfauthor = {Hongyu Yin}}}{}
+\begin{description}
+\raggedright{}
+\item[Title]\AsIs{Industry Financial Analysis Platform}
+\item[Version]\AsIs{1.0.0}
+\item[Description]\AsIs{Based on the Osiris dataset, this tool provides interactive financial analysis across industries. It includes features such as trend analysis, industry benchmarking, and multidimensional visualization, supporting the analysis of key financial indicators including operating revenue, net debt, current assets, and current ratio.}
+\item[License]\AsIs{MIT + file LICENSE}
+\item[Encoding]\AsIs{UTF-8}
+\item[LazyData]\AsIs{true}
+\item[Imports]\AsIs{shiny,
+ggplot2,
+dplyr,
+tidyr,
+scales,
+DT}
+\item[Suggests]\AsIs{knitr,
+rmarkdown}
+\item[VignetteBuilder]\AsIs{knitr}
+\item[Depends]\AsIs{R (>= 3.5)}
+\item[RoxygenNote]\AsIs{7.3.3}
+\end{description}
+\Rdcontents{Contents}
+\HeaderA{financial\_data}{Industry Financial Metrics Dataset}{financial.Rul.data}
+\keyword{datasets}{financial\_data}
+%
+\begin{Description}
+This dataset contains key financial metrics for multiple industries
+during the 2017-2021 period, sourced from the Osiris database.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+financial_data
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 45 rows and 9 columns:
+\begin{description}
+
+\item[year] Integer, representing the year (2017-2021)
+\item[industry] Character, industry code abbreviation
+\item[operating\_income] Numeric, average operating income
+\item[net\_debt] Numeric, average net debt
+\item[current\_assets] Numeric, average current assets
+\item[current\_ratio] Numeric, average current ratio
+\item[debt\_to\_assets] Numeric, debt-to-assets ratio (calculated field)
+\item[profitability\_ratio] Numeric, profitability-to-assets ratio (calculated field)
+\item[industry\_label] Character, industry name
+
+\end{description}
+
+\end{Format}
+%
+\begin{Source}
+Osiris Global Public Company Database
+\end{Source}
+%
+\begin{Examples}
+\begin{ExampleCode}
+# Load the dataset
+data(financial_data)
+
+# View data structure
+str(financial_data)
+
+# View first few rows of data
+head(financial_data)
+
+\end{ExampleCode}
+\end{Examples}
+\HeaderA{industry\_metadata}{Industry Metadata}{industry.Rul.metadata}
+\keyword{datasets}{industry\_metadata}
+%
+\begin{Description}
+Contains a lookup table between industry codes and Chinese names,
+along with detailed descriptions of each industry.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+industry_metadata
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 9 rows and 3 columns:
+\begin{description}
+
+\item[code] Character, industry code abbreviation
+\item[name\_label] Character, industry name
+\item[description] Character, detailed industry description
+
+\end{description}
+
+\end{Format}
+%
+\begin{Examples}
+\begin{ExampleCode}
+# View industry metadata
+data(industry_metadata)
+print(industry_metadata)
+
+\end{ExampleCode}
+\end{Examples}
+\HeaderA{launch\_app}{Launch Industry Financial Analysis Platform}{launch.Rul.app}
+%
+\begin{Description}
+Launch an interactive Shiny application for analyzing financial indicator trends and comparisons across various industries.
+The application includes features such as trend analysis, industry benchmarking, and multidimensional visualization.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+launch_app()
+\end{verbatim}
+\end{Usage}
+%
+\begin{Value}
+invisibly returns NULL. The function is called for its side effect
+of launching a Shiny application.
+\end{Value}
+%
+\begin{References}
+Data source: Osiris database
+\end{References}
+%
+\begin{SeeAlso}
+For detailed information on the dataset, please refer to \code{\LinkA{financial\_data}{financial.Rul.data}}
+\end{SeeAlso}
+%
+\begin{Examples}
+\begin{ExampleCode}
+## Not run: 
+# Launch Financial Analysis App
+launch_app()
+
+## End(Not run)
+
+\end{ExampleCode}
+\end{Examples}
+\printindex{}
+\end{document}
