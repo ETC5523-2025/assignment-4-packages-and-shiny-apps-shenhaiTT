@@ -28,7 +28,7 @@ head(financial_data)
 ## 📚 Documentation
 
 **Visit our comprehensive documentation website:**  
-👉 [https://etc5523-2025.github.io/HongyuFinancialAnalysis](https://setc5523-2025.github.io/HongyuFinancialAnalysis)
+👉 [https://ETC5523-2025.github.io/assignment-4-packages-and-shiny-apps-shenhaiTT/](https://ETC5523-2025.github.io/assignment-4-packages-and-shiny-apps-shenhaiTT/)
 
 The pkgdown site includes:
 - Detailed function documentation
