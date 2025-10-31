@@ -1,0 +1,22 @@
+Package: HongyuFinancialAnalysis
+Title: Industry Financial Analysis Platform
+Version: 1.0.0
+Authors@R: 
+    person("Hongyu", "Yin", , "YiZhi3190826532@outlook.com", role = c("aut", "cre"))
+Description: Based on the Osiris dataset, this tool provides interactive financial analysis across industries. It includes features such as trend analysis, industry benchmarking, and multidimensional visualization, supporting the analysis of key financial indicators including operating revenue, net debt, current assets, and current ratio.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    shiny,
+    ggplot2,
+    dplyr,
+    tidyr,
+    scales
+Suggests:
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Depends: 
+    R (>= 3.5)
+RoxygenNote: 7.3.3
