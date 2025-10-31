@@ -44,6 +44,7 @@
 #' @import shiny
 #' @import ggplot2
 #' @import dplyr
+#' @importFrom DT datatable renderDT DTOutput formatRound
 #' @importFrom tidyr gather spread
 #' @importFrom scales rescale
 ## usethis namespace: end

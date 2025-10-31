@@ -1,9 +1,12 @@
-#' Get Financial Metric Label
-#'
-#' @param metric Character, metric code name
-#'
-#' @return Character string with formatted metric name
-#'
+#' Create empty plot with message
+#' @noRd
+create_empty_plot <- function(message) {
+  ggplot2::ggplot() +
+    ggplot2::annotate("text", x = 1, y = 1, label = message, size = 6) +
+    ggplot2::theme_void()
+}
+
+#' Get metric label
 #' @noRd
 get_metric_label <- function(metric) {
   switch(metric,
@@ -16,31 +19,7 @@ get_metric_label <- function(metric) {
   )
 }
 
-#' Create Empty Plot
-#'
-#' Creates an empty plot with a prompt message when there is no data to display.
-#'
-#' @param message Character, message to display in the plot
-#'
-#' @return ggplot2 object
-#'
-#' @noRd
-create_empty_plot <- function(message) {
-  ggplot() +
-    annotate("text", x = 1, y = 1, label = message, size = 6) +
-    theme_void()
-}
-
-
-#' Generate Analysis Suggestions
-#'
-#' Generates corresponding analysis suggestions based on financial metrics and growth rates.
-#'
-#' @param metric Character, financial metric name
-#' @param growth_rate Numeric, growth rate percentage
-#'
-#' @return Character, analysis suggestion text
-#'
+#' Get analysis suggestion
 #' @noRd
 get_analysis_suggestion <- function(metric, growth_rate) {
   suggestions <- list(
@@ -54,6 +33,6 @@ get_analysis_suggestion <- function(metric, growth_rate) {
                            "Liquidity has improved, and short-term risk has been reduced.",
                            "Liquidity is tightening; closely monitor cash flow.")
   )
-  
+
   return(suggestions[[metric]] %||% "Consider this metric alongside others for a comprehensive view.")
 }

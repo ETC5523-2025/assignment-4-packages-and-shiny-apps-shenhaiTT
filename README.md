@@ -12,7 +12,8 @@ Imports:
     ggplot2,
     dplyr,
     tidyr,
-    scales
+    scales,
+    DT
 Suggests:
     knitr,
     rmarkdown
