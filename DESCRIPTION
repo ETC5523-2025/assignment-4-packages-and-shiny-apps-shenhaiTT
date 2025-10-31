@@ -1,6 +1,6 @@
 Package: HongyuFinancialAnalysis
 Title: Industry Financial Analysis Platform
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     person("Hongyu", "Yin", , "YiZhi3190826532@outlook.com", role = c("aut", "cre"))
 Description: Based on the Osiris dataset, this tool provides interactive financial analysis across industries. It includes features such as trend analysis, industry benchmarking, and multidimensional visualization, supporting the analysis of key financial indicators including operating revenue, net debt, current assets, and current ratio.
