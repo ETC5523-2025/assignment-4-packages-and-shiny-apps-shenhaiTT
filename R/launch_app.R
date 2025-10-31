@@ -20,6 +20,8 @@
 #' @references
 #' Data source: Osiris database
 launch_app <- function() {
+  options(shiny.legacy.datatable = TRUE)
+
   appDir <- system.file("app", package = "HongyuFinancialAnalysis")
   if (appDir == "") {
     stop("Could not find app directory. Try re-installing 'HongyuFinancialAnalysis'.",
