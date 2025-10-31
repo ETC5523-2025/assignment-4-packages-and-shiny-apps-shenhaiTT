@@ -27,7 +27,7 @@ home:
 navbar:
   structure:
     left: [home, reference, articles, news]
-    right: [github]  # 改为字符向量
+    right: [github]
 
   components:
     github:
