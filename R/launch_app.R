@@ -20,9 +20,9 @@
 #' @references
 #' Data source: Osiris database
 launch_app <- function() {
-  appDir <- system.file("app", package = "FinancialAnalysis")
+  appDir <- system.file("app", package = "HongyuFinancialAnalysis")
   if (appDir == "") {
-    stop("Could not find app directory. Try re-installing 'FinancialAnalysis'.",
+    stop("Could not find app directory. Try re-installing 'HongyuFinancialAnalysis'.",
          call. = FALSE)
   }
 
