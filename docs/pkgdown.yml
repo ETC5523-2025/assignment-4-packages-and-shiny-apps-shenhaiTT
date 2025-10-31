@@ -1,0 +1,9 @@
+pandoc: 3.6.3
+pkgdown: 2.1.3
+pkgdown_sha: ~
+articles:
+  financial-analysis-guide: financial-analysis-guide.html
+last_built: 2025-10-31T07:35Z
+urls:
+  reference: https://ETC5523-2025.github.io/assignment-4-packages-and-shiny-apps-shenhaiTT/reference
+  article: https://ETC5523-2025.github.io/assignment-4-packages-and-shiny-apps-shenhaiTT/articles
