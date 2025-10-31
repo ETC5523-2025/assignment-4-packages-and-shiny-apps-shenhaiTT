@@ -20,9 +20,3 @@ VignetteBuilder: knitr
 Depends: 
     R (>= 3.5)
 RoxygenNote: 7.3.3
-## Installation
-
-```r
-# Install from GitHub
-remotes::install_github("ETC5523-2025/assignment-4-packages-and-shiny-apps-shenhaiTT")
-```

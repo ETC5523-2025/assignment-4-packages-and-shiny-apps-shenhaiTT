@@ -1,0 +1,52 @@
+---
+title: "User Guide for Industry Financial Analysis Platform"
+author: "Hongyu Yin"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{User Guide for Industry Financial Analysis Platform}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+LazyData: true
+---
+
+## Summary
+
+This package, based on the Osiris dataset, provides comprehensive industry financial ratio analysis capabilities.
+
+## About the Dataset
+
+The dataset contains financial metrics for nine industries from 2017 to 2021:
+- **Basic Materials (BAS)**、**Consumer Services (CSD)**、**Consumer Products (CST)**
+- **Energy (ENE)**、**Financials (FIN)**、**Healthcare (HEA)**  
+- **Industrials (IND)**、**Real Estate (REA)**、**Technology (TEC)**
+
+## Core Features
+
+### 1. Trend Analysis
+- Multi-Industry Financial Metrics Time Series Analysis
+- Customizable Year Ranges and Data Metrics
+- Support for Multiple Chart Types
+
+### 2. Industry Comparison
+- Cross-industry performance benchmarking
+- Multidimensional radar chart comparison
+- Bubble chart relationship analysis
+
+### 3. Intelligent Insights
+- Automatically identifies top-growing industries
+- Provides analytical recommendations
+- Detects outliers
+
+## Use Case
+
+```r
+# Install and then load the package.
+library(HongyuFinancialAnalysis)
+
+# View Dataset
+data(financial_data)
+head(financial_data)
+
+# Launch Analysis App
+launch_app()
